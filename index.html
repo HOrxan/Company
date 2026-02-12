@@ -17,18 +17,21 @@
                 --color: #f4511e;
             }
 
-            body{
+            body {
                 font: 400 15px "Lato", sans-serif;
                 line-height: 1.8;
             }
+
             .jumbotron {
                 background-color: var(--color);
                 color: white;
             }
 
-            .jumbotron, .navbar{
+            .jumbotron,
+            .navbar {
                 font-family: "Monserrat", sans-serif;
             }
+
             .bg-grey {
                 background-color: #f6f6f6;
             }
@@ -37,12 +40,15 @@
                 padding: 0 25px;
             }
 
-            h2, h4{
+            h2,
+            h4 {
                 margin-bottom: 30px;
             }
-            h4{
+
+            h4 {
                 line-height: 1.8;
             }
+
             .logo {
                 font-size: 200px;
                 color: var(--color);
@@ -178,7 +184,7 @@
 
             .navbar-nav li a:hover,
             .navbar-nav li.active a {
-                color: var(--color)!important;
+                color: var(--color) !important;
                 background-color: white !important;
             }
 
@@ -198,16 +204,18 @@
             }
 
             @media (min-width:768px) {
-                #about .row{
-            display: flex;
-            align-items: center;
+                #about .row {
+                    display: flex;
+                    align-items: center;
+                }
             }
-            }
-            .col-sm-4{
+
+            .col-sm-4 {
                 z-index: 20;
             }
         </style>
     </head>
+
     <body id="page" data-spy="scroll" data-target=".navbar" data-offset="60">
         <!--Navbar-->
         <nav class="navbar-fixed-top navbar navbar-default">
@@ -257,12 +265,14 @@
                 <div class="row">
                     <div class="col-sm-8">
                         <h2 class="text-uppercase">About Company Page</h2>
-                        <h4 class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        <h4 class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
                             incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</h4>
-                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt
                             ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco
@@ -284,12 +294,14 @@
                     </div>
                     <div class="col-sm-8">
                         <h2 class="text-uppercase">Our Values</h2>
-                        <h4 class="text-right"><strong class="text-uppercase">Misson: </strong> Our mission lorem ipsum dolor sit amet,
+                        <h4 class="text-right"><strong class="text-uppercase">Misson: </strong> Our mission lorem ipsum
+                            dolor sit amet,
                             consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                             nostrud
                             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
-                        <p class="text-left"><strong>VISION: </strong>Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        <p class="text-left"><strong>VISION: </strong>Our vision Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit,
                             sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem
@@ -490,32 +502,33 @@
                     </div>
                 </div>
             </section>
-        <section class="container-fluid bg-grey" id="contact">
-            <h2 class="text-center text-uppercase">Contact</h2>
-            <div class="row">
-                <div class="col-sm-5 form-group">
-                    <p>Contact us and we'll get back to you within 24 hours.</p>
-                </div>
-                <div class="col-sm-7 form-group">
-                    <div class="row flex ">
-                        <input class="col-sm-6 form-control" type="text">
-                        <input class="col-sm-6 form-control" type="email">
+            <section class="container-fluid bg-grey" id="contact">
+                <h2 class="text-center text-uppercase">Contact</h2>
+                <div class="row">
+                    <div class="col-sm-5 form-group">
+                        <p>Contact us and we'll get back to you within 24 hours.</p>
+                    </div>
+                    <div class="col-sm-7 form-group">
+                        <div class="row flex ">
+                            <input class="col-sm-6 form-control" type="text">
+                            <input class="col-sm-6 form-control" type="email">
+                        </div>
+                    </div>
+                    <div class="col-sm-5 form-group text">
+                        <p><span class="glyphicon glyphicon-map-marker"></span> Contact us and we'll get back to you
+                            within
+                            24 <br>
+                            <span class="glyphicon glyphicon-phone"></span> +00 1515151515 <br>
+                            <span class="glyphicon glyphicon-envelope"></span> myemail@something.com
+                        </p>
+                    </div>
+                    <div class="col-sm-7 form-group area">
+                        <textarea name="" rows="5" class="form-control"></textarea>
                     </div>
                 </div>
-                <div class="col-sm-5 form-group text">
-                    <p><span class="glyphicon glyphicon-map-marker"></span> Contact us and we'll get back to you within
-                        24 <br>
-                        <span class="glyphicon glyphicon-phone"></span> +00 1515151515 <br>
-                        <span class="glyphicon glyphicon-envelope"></span> myemail@something.com
-                    </p>
-                </div>
-                <div class="col-sm-7 form-group area">
-                    <textarea name="" rows="5" class="form-control"></textarea>
-                </div>
-            </div>
-            <img src="map.jpg" alt="Map">
-        </section>
-</main>
+                <img src="map.jpg" alt="Map">
+            </section>
+        </main>
         <footer class="container-fluid text-center">
             <a href="#page" title="To Top" aria-label="Page Top">
                 <span class="glyphicon glyphicon-chevron-up"></span>
@@ -524,4 +537,5 @@
             </p>
         </footer>
     </body>
+
 </html>
