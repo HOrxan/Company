@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Company</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="">
+        <style>
+            :root {
+                --color: #f4511e;
+            }
+
+            body{
+                font: 400 15px "Lato", sans-serif;
+                line-height: 1.8;
+            }
+            .jumbotron {
+                background-color: var(--color);
+                color: white;
+            }
+
+            .jumbotron, .navbar{
+                font-family: "Monserrat", sans-serif;
+            }
+            .bg-grey {
+                background-color: #f6f6f6;
+            }
+
+            .container-fluid {
+                padding: 0 25px;
+            }
+
+            h2, h4{
+                margin-bottom: 30px;
+            }
+            h4{
+                line-height: 1.8;
+            }
+            .logo {
+                font-size: 200px;
+                color: var(--color);
+            }
+
+            .logo-small {
+                color: var(--color);
+                font-size: 50px;
+            }
+
+
+            .thumbnail {
+                padding: 0 0 15px 0;
+                border: none;
+                border-radius: 0;
+            }
+
+            .thumbnail img {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 10px;
+            }
+
+            .col-sm-4 {
+                padding: 25px 0;
+            }
+
+            .carousel-control.right,
+            .carousel-control.left {
+                background-image: none;
+                color: var(--color);
+            }
+
+            .carousel-indicators li {
+                border-color: var(--color);
+            }
+
+            .carousel-indicators li.active {
+                background-color: var(--color);
+            }
+
+            .item h4 {
+                font-size: 19px;
+                line-height: 22px;
+                font-family: 400;
+                font-style: italic;
+                margin: 70px 0;
+            }
+
+            .item span {
+                font-style: normal;
+            }
+
+            .panel {
+                border: 1px solid var(--color);
+                border-radius: 0;
+                transition: box-shadow 1s;
+                transition: 1s;
+            }
+
+            .panel:hover {
+                box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+                scale: 1.1;
+            }
+
+            .panel-footer {
+                transition: width 2s;
+            }
+
+            .panel-footer .btn:hover {
+                border: 1px solid var(--color);
+                background-color: white !important;
+                color: var(--color);
+
+            }
+
+            .panel-heading {
+                color: white !important;
+                background-color: var(--color) !important;
+                padding: 25px;
+                border-bottom: 1px solid transparent;
+                border-radius: 0;
+            }
+
+            .panel-footer {
+                background-color: white !important;
+            }
+
+            .panel-footer h3 {
+                font-size: 32px;
+            }
+
+            .panel-footer h4 {
+                font-size: 14px;
+                color: #aaa;
+            }
+
+            .panel-footer .btn {
+                margin: 15px 0;
+                background-color: var(--color);
+                color: white;
+            }
+
+            .col-sm-4 {
+                padding-inline: 25px;
+            }
+
+            .flex {
+                display: flex;
+                gap: 25px;
+            }
+
+            .area {
+                padding-inline: 25px;
+            }
+
+            .text {
+                line-height: 2.5;
+            }
+
+            .navbar {
+                background-color: var(--color);
+                font-size: 12px;
+                border: 0;
+                letter-spacing: 4px;
+                margin-bottom: 0;
+            }
+
+            .navbar li a,
+            .navbar .navbar-brand {
+                color: white !important;
+            }
+
+            .navbar-nav li a:hover,
+            .navbar-nav li.active a {
+                color: var(--color)!important;
+                background-color: white !important;
+            }
+
+            .navbar-default .navbar-toggle {
+                border-color: transparent;
+                color: white !important;
+            }
+
+            footer .glyphicon {
+                font-size: 20px;
+                margin-bottom: 20px;
+                color: var(--color);
+            }
+
+            img[alt="Map"] {
+                width: 100%;
+            }
+
+            @media (min-width:768px) {
+                #about .row{
+            display: flex;
+            align-items: center;
+            }
+
+            }
+
+            .col-sm-4{
+                z-index: 20;
+            }
+        </style>
+    </head>
+
+    <body id="page" data-spy="scroll" data-target=".navbar" data-offset="60">
+        <!--Navbar-->
+        <nav class="navbar-fixed-top navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"
+                        aria-label="Add item">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Logo</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolie">Portfolio</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Head-->
+        <header>
+            <div class="jumbotron text-center">
+                <h1>Company</h1>
+                <p>We specialize in blablabla</p>
+                <form class="form-inline">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Email Address" size="50" required>
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-danger">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+        <!--Main-->
+        <main class="container-fluid">
+
+            <!-- About-->
+            <section id="about">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h2 class="text-uppercase">About Company Page</h2>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim
+                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.</p>
+                        <button type="button" class="btn btn-default bg-lg">Get in Touch</button>
+                    </div>
+                    <div class="col-sm-4 text-center logo-lg">
+                        <span class="glyphicon glyphicon-signal logo"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <span class="glyphicon glyphicon-globe logo"></span>
+                    </div>
+                    <div class="col-sm-8">
+                        <h2 class="text-uppercase">Our Values</h2>
+                        <h4><strong class="text-uppercase">Misson: </strong> Our mission lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+                        <p><strong>VISION: </strong>Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <button type="button">Get in Touch</button>
+                    </div>
+                </div>
+            </section>
+
+            <!--SERVICES-->
+            <section class="text-center container-fluid" id="services">
+                <h2 class="text-uppercase">Services</h2>
+                <h4>What we offer</h4>
+                <div class="row">
+
+                    <!--Power-->
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-off logo-small"></span>
+                        <h4 class="text-uppercase">Power</h4>
+                        <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
+
+                    <!--Love-->
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-heart logo-small"></span>
+                        <h4 class="text-uppercase">Love</h4>
+                        <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
+
+                    <!--Job Done-->
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-lock logo-small"></span>
+                        <h4 class="text-uppercase">Job Done</h4>
+                        <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
+
+                    <!--Green-->
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-leaf logo-small"></span>
+                        <h4 class="text-uppercase">Green</h4>
+                        <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
+
+                    <!--Certified-->
+                    <div class="col-sm-4">
+                        <span class="	glyphicon glyphicon-certificate logo-small"></span>
+                        <h4 class="text-uppercase">Certified</h4>
+                        <p>Lorem ipsum dolor sit amet..</p>
+
+                    </div><!--hard Work-->
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-wrench logo-small"></span>
+                        <h4 class="text-uppercase">hard Work</h4>
+                        <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--Portfolio-->
+            <section class="container-fluid text-center bg-grey" id="portfolie">
+                <h2 class="text-uppercase">Portfolio</h2>
+                <h4>What we have created</h4>
+                <div class="row text-center">
+
+                    <!--Paris-->
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <img src="paris.jpg" alt="Paris">
+                            <p><strong>Paris</strong></p>
+                            <p>Yes, we built Paris</p>
+                        </div>
+                    </div>
+
+                    <!--New York-->
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <img src="newyork.jpg" alt="New York">
+                            <p><strong>New York</strong></p>
+                            <p>Yes, we built New York</p>
+                        </div>
+                    </div>
+
+                    <!--San Francisco-->
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <img src="sanfran.jpg" alt="San Francisco">
+                            <p><strong>San Francisco</strong></p>
+                            <p>Yes, we built San Francisco</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Collapse-->
+            <section>
+                <h2>What our customers say</h2>
+                <div id="carousel" class="carousel slide text-center" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <h4>This company is the best. I am so happy with the result!<br>
+                                <span>Michael Roe, Vice President, Comment Box</span>
+                            </h4>
+                        </div>
+                        <div class="item">
+                            <h4>"One word... WOW!!"<br>
+                                <span>John Doe, Salesman, Rep Inc</span>
+                            </h4>
+                        </div>
+                        <div class="item">
+                            <h4>""Could I... BE any more happy with this company?"<br>
+                                <span>Chandler Bing, Actor, FriendsAlot</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span></a>
+                    <a class="right carousel-control" href="#carousel" data-slide="next">
+                        <span class="sr-only">Next</span><span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </section>
+
+            <!--Pricing-->
+            <section id="pricing">
+                <div class="row text-center container-fluid">
+                    <h2 class="text-uppercase">Pricing</h2>
+                    <h4>Choose a payment plan that works for you</h4>
+                </div>
+                <div class="row text-center">
+
+                    <!--Basic-->
+                    <div class="col-sm-4">
+                        <div class="panel panel-default text-center">
+                            <div class="panel-heading">
+                                <h1>Basic</h1>
+                            </div>
+                            <div class="panel-body">
+                                <p><strong>20</strong> Lorem</p>
+                                <p><strong>15</strong> Ipsum</p>
+                                <p><strong>5</strong> Dolor</p>
+                                <p><strong>2</strong> Sit</p>
+                                <p><strong>Endless</strong> Amet</p>
+                            </div>
+                            <div class="panel-footer">
+                                <h3><strong>$19</strong></h3>
+                                <h4>per month</h4>
+                                <button class="btn btn-lg" type="button">Sing Up</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Pro-->
+                    <div class="col-sm-4">
+                        <div class="panel panel-default text-center">
+                            <div class="panel-heading">
+                                <h1>Pro</h1>
+                            </div>
+                            <div class="panel-body">
+                                <p><strong>50</strong> Lorem</p>
+                                <p><strong>25</strong> Ipsum</p>
+                                <p><strong>10</strong> Dolor</p>
+                                <p><strong>5</strong> Sit</p>
+                                <p><strong>Endless</strong> Amet</p>
+                            </div>
+                            <div class="panel-footer">
+                                <h3><strong>$29</strong></h3>
+                                <h4>per month</h4>
+                                <button type="button" class="btn btn-lg">Sing Up</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Premium-->
+                    <div class="col-sm-4">
+                        <div class="panel panel-default  text-center">
+                            <div class="panel-heading">
+                                <h1>Premium</h1>
+                            </div>
+                            <div class="panel-body">
+                                <p><strong>100</strong> Lorem</p>
+                                <p><strong>50</strong> Ipsum</p>
+                                <p><strong>25</strong> Dolor</p>
+                                <p><strong>10</strong> Sit</p>
+                                <p><strong>Endless</strong> Amet</p>
+                            </div>
+                            <div class="panel-footer">
+                                <h3><strong>$49</strong></h3>
+                                <h4>per month</h4>
+                                <button type="button" class="btn btn-lg">Sing Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <address class="container-fluid bg-grey" id="contact">
+            <h2 class="text-center text-uppercase">Contact</h2>
+            <div class="row">
+                <div class="col-sm-5 form-group">
+                    <p>Contact us and we'll get back to you within 24 hours.</p>
+                </div>
+                <div class="col-sm-7 form-group">
+                    <div class="row flex ">
+                        <input class="col-sm-6 form-control" type="text">
+                        <input class="col-sm-6 form-control" type="email">
+                    </div>
+                </div>
+                <div class="col-sm-5 form-group text">
+                    <p><span class="glyphicon glyphicon-map-marker"></span> Contact us and we'll get back to you within
+                        24 <br>
+                        <span class="glyphicon glyphicon-phone"></span> +00 1515151515 <br>
+                        <span class="glyphicon glyphicon-envelope"></span> myemail@something.com
+                    </p>
+                </div>
+                <div class="col-sm-7 form-group area">
+                    <textarea name="" rows="5" class="form-control"></textarea>
+                </div>
+            </div>
+            <img src="map.jpg" alt="Map">
+        </address>
+
+        <footer class="container-fluid text-center">
+            <a href="#page" title="To Top" aria-label="Page Top">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+            <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a>
+            </p>
+        </footer>
+    </body>
+
+</html>
